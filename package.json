@@ -1,0 +1,24 @@
+{
+  "author": "__author__ <__email__> (__website__)",
+  "name": "__name__",
+  "description": "__description__",
+  "version": "0.0.1",
+  "homepage": "https://github.com/__github-user__/__name__",
+  "repository": {
+    "url": "https://github.com/__github-user__/__name__"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "beefy ../lib/index.js:__name__.js --cwd ./examples -- -r ./lib/index.js:__name__",
+    "test": "tap ./test/*.js"
+  },
+  "devDependencies": {
+    "beefy": "~0.4.1",
+    "browserify": "~2.26.0",
+    "tap": "~0.3.1"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.6"
+  }
+}
